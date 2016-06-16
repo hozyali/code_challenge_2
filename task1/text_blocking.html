@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Challenge - v1.0</title>
+        <script type="text/javascript" src="scripts.js"></script>
+        <script type="text/javascript">
+        // display the output in html div 
+            window.onload = function() {
+                
+                // create an array with lines
+                var yourdata = [
+                'AAAAAAA',
+                'BBBBBBB',
+                'CCCCCCC',
+                'DDDDDDD',
+                'EEEEEEE',
+                'FFFFFFF',
+                'GGGGGGG'
+            ]
+            
+                mydata = rowtocol(yourdata)
+                document.getElementById('jsoutput').innerHTML = mydata.join('<br />');
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Javascript code challenge - Display rows as columns</h2>
+        <!-- Div to output the javascript row to column function -->
+        <div id="jsoutput"></div>
+
+    </body>
+</html>
